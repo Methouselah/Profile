@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Cabinet</title>
+</head>
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+           <div class="header__left">
+              <nav>
+                 <ul class="nav">
+                    <li class="nav__item">
+                       <a href="index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                       <a href="" class="nav__link has-subnav">Статьи</a>
+        
+                       <ul class="subnav">
+                          <li class="subnav__item">
+                             <a class="subnav__link" href="#">Создание сайтов</a>
+                          </li>
+                          <li class="subnav__item">
+                             <a class="subnav__link"href="#">Интернет-маркетинг</a>
+                          </li>
+                          <li class="subnav__item">
+                             <a class="subnav__link" href="#">Продвижение видео</a>
+                          </li>
+                       </ul>
+                    </li>
+                    <li class="nav__item">
+                       <a href="" class="nav__link">Обо мне</a>
+                    </li>
+                    <li class="nav__item">
+                       <a href="" class="nav__link">Реклама</a>
+                    </li>
+                 </ul>
+              </nav>
+           </div>
+           <div class="header__right">
+              <nav>
+                 <ul class="nav">
+                    <li class="nav__item">
+                       <a href="cabinet.html" class="nav__link">Профиль</a>
+                    </li>
+                    <li class="nav__item">
+                       <a href="login.html" class="nav__link">Выйти</a>
+                    </li>
+                 </ul>
+              </nav>
+              <form class="search" action="search.html" method="get">
+                 <input class="search__input" type="text" placeholder="Поиск по блогу">
+              </form>
+           </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+           <div class="sidebar__header">
+              <img src="assets/images/sidebar/sidebar__header.jpg" alt="#">
+           </div>
+           <div class="sidebar__content">
+              <div class="profile">
+                 <img class="profile__avatar" src="assets/images/sidebar/sidebar__content.png" alt="автар">
+                 <div class="profile__name">Дмитрий Cтенагач</div>
+                 <div class="profile__prof">блог front-end разработчика</div>
+              </div>
+              <ul class="social">
+                 <li class="social__item">
+                    <a class="social__link" href="#" target="_blank">
+                       <img src="assets/images/sidebar/instagram.svg" alt="">
+                    </a>
+                 </li>
+                 <li class="social__item">
+                    <a class="social__link" href="#" target="_blank">
+                       <img src="assets/images/sidebar/vk.svg" alt="">
+                    </a>
+                 </li>
+                 <li class="social__item">
+                    <a class="social__link" href="#" target="_blank">
+                       <img src="assets/images/sidebar/pinterest.svg" alt="">
+                    </a>
+                 </li>
+              </ul>
+              <p class="profile__text">Front-end разработчик. Практик верстки сайтов.
+        
+                 Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.</p>
+           </div>
+           <div class="sidebar__footer">
+              <a href="works.html" class="btn btn--red btn--big">Мои работы</a>
+              <button class="btn btn--blue btn--big" type="button">Написать мне</button>
+           </div>
+        </aside>
+        <!-- Main -->
+        <main class="main">
+            <div class="container">
+                
+                <h1 class="page__title">Профиль</h1>
+                
+                <form class="form" action="/" method="post">
+                   <div class="cabinet">
+                      <div class="cabinet__form">
+                         <div class="form__group">
+                            <input class="form__control form__control--input" type="text" name="uzername" placeholder="Имя и фамилия">
+                         </div>
+                         <div class="form__group">
+                            <input class="form__control form__control--input" type="email" name="uzername" placeholder="Почта">
+                         </div>
+                         <div class="form__group">
+                            <input class="form__control form__control--input" type="password" name="newpass" placeholder="Старый пароль">
+                         </div>
+                         <div class="form__group">
+                            <input class="form__control form__control--input" type="password" name="oldpass" placeholder="Новый пароль">
+                         </div>
+                         <button class="btn btn--blue btn--small">Сохранить</button>
+                      </div> 
+                      <div class="cabinet__avatar">
+                         <img class="cabinet__img" src="assets/images/avatar.jpg" alt="фото">
+                         <a href="#" class="cabinet__link">выбрать  аватар</a>
+                      </div>   
+                   </div>
+                </form>
+                   
+                
+                
+            </div>
+        </main>
+    </div>
+    
+    <div class="modal">
+       <div class="modal__content">
+          <form class="form form--contact" action="/" method="post">
+             <div class="modal__form">
+                <div class="form__group">
+                   <input class="form__control form__control--input" type="text" name="uzername" placeholder="Введиет имя">
+                </div>
+                <div class="form__group">
+                   <input class="form__control form__control--input" type="email" name="login" placeholder="Ваш e-mail">
+                </div>
+                <div class="form__group">
+                   <input class="form__control form__control--input" type="password" name="password" placeholder="Пароль">
+                </div>
+                <button class="btn btn--blue btn--small">Отправить</button>    
+             </div>
+             <div class="modal__info">
+                <a href="#" class="modal__link">e-mail: info@mywebsite.ru</a>
+                <a href="#"  class="modal__link">тел: +943-232-856-22</a>
+             </div>
+          </form>
+    
+          <button class="modal--close" type="button">
+             <img src="assets/images/close.svg" alt="close">
+          </button>
+       </div>     
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
